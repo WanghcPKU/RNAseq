@@ -15,5 +15,5 @@
 ## STEP 6 06featurecounts.sh  
  'The number of reads mapped to each gene was counted using featureCounts software'  
  featureCounts software was used to map the number of reads to each gene.  
- ##STEP 7 Deseq2.r  
- 差异基因分析（Differentially expressed genes (DEGs) analysis）  
+## STEP 7 Deseq2.r    
+差异基因分析（Differentially expressed genes (DEGs) analysis）    
