@@ -18,5 +18,6 @@ index download : https://daehwankimlab.github.io/hisat2/download/
  'The number of reads mapped to each gene was counted using featureCounts software'  
  featureCounts software was used to map the number of reads to each gene.  
 gtf download : https://www.gencodegenes.org/  
+gtf download Chinese help description : https://blog.csdn.net/u011262253/article/details/89363809  
 ## STEP 7 Deseq2.r    
 差异基因分析（Differentially expressed genes (DEGs) analysis）    
