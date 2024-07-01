@@ -11,9 +11,10 @@
 ## STEP 3 03fastq.sh  
 ## STEP 4 04hisat.sh  
 回帖基因组（The high quality RNAseq reads were mapped to the hg38 human / mm10 mouse genome by using Hisat2 ）  
-nohup sh 04hisat.sh > mapped_ratio.out &  
+`nohup sh 04hisat.sh > mapped_ratio.out & `   
 index download : https://daehwankimlab.github.io/hisat2/download/  
-## STEP 5 05bam.sh  
+## STEP 5 05bam.sh 
+从bam文件中提取出来未比对上的序列 ：`samtools view x.bam | awk '$3=="*" {print ">"$1"\n"$10}' >x_no_mapped_reads.txt`  
 ## STEP 6 06featurecounts.sh  
  'The number of reads mapped to each gene was counted using featureCounts software'  
  featureCounts software was used to map the number of reads to each gene.  
