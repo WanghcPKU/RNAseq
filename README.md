@@ -21,4 +21,5 @@ index download : https://daehwankimlab.github.io/hisat2/download/
 gtf download : https://www.gencodegenes.org/  
 gtf download Chinese help description : https://blog.csdn.net/u011262253/article/details/89363809  
 ## STEP 7 Deseq2.r    
-差异基因分析（Differentially expressed genes (DEGs) analysis）    
+差异基因分析（Differentially expressed genes (DEGs) analysis）   
+## 补充1：featurecounts 结果批量读取 merge.r
