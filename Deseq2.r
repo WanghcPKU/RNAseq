@@ -101,6 +101,16 @@ gene.GO <- as.data.frame(gene.GO)
 head(gene.GO)
 write.csv(gene.GO, "./res/upgo.csv")
 
+####可以使用simplify函数 或 simplifyEnrichment 简化GO结果
+go_sim <- simplify(gene.GO,cutoff=0.7,by="p.adjust",select_fun=min) 
+
+library(simplifyEnrichment) # 只能对 BP MF CC的一种进行简化 要先subset结果
+go_id_bp <- gene.GO$ID
+
+mat <- GO_similarity(go_id_bp, ont = "MF", db="org.Hs.eg.db")
+df <- simplifyGO(mat, plot = T)
+
+
 
 gene_down <- subset(res_sign, log2FoldChange < 0)$X
 
