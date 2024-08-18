@@ -16,5 +16,5 @@ processed_contents <- lapply(txt_contents, function(df) {
   colnames(df)[2] <- extract_column_name(colnames(df)[2])
   return(df)
 })
-all <- Reduce(merge,processed_contents)
+all <- Reduce(function(x, y) merge(x, y, by = "geneid"), processed_contents)
 head(all)
