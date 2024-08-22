@@ -24,3 +24,4 @@ gtf download Chinese help description : https://blog.csdn.net/u011262253/article
 差异基因分析（Differentially expressed genes (DEGs) analysis）   
 ## 补充1：featurecounts 结果批量读取 merge.r  
 ## 补充2：GSEA analysis GSEA.r  
+## 补充3：人鼠基因转换 human_mouse_gene_transition.r  
